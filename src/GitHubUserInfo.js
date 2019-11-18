@@ -19,17 +19,16 @@ class GitHubUserInfo extends Component {
     this.setState({
       avatar: data.avatar_url,
       name: data.name,
-      bio: data.bio,
-      profileUrl: data.url
+      bio: data.bio
     });
-    console.log(this.state);
   }
 
   render() {
     return (
       <div>
-        <h1>GitHub User Info</h1>
-        <img src={this.state.avatar} />
+        <h1>GitHub User: {this.state.name}</h1>
+        <p>Bio: {this.state.bio}</p>
+        <img src={this.state.avatar} alt="User Avatar" />
       </div>
     );
   }
