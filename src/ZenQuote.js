@@ -23,7 +23,21 @@ class ZenQuote extends Component {
     return (
       <div>
         <h1>Always remember ... </h1>
-        <div className="loader"></div>
+        <div className="showbox">
+          <div className="loader">
+            <svg className="circular" viewBox="25 25 50 50">
+              <circle
+                className="path"
+                cx="50"
+                cy="50"
+                r="20"
+                fill="none"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+              />
+            </svg>
+          </div>
+        </div>
         <p>{this.state.quote}</p>
       </div>
     );
