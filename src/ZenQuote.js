@@ -19,6 +19,10 @@ class ZenQuote extends Component {
     });
   }
 
+  componentDidUpdate() {
+    console.log("Zen Quote Updated");
+  }
+
   render() {
     return (
       <div>
